@@ -17,11 +17,13 @@ public class StudentServiceimpl implements StudentService{
     @override
     public List<Student> getAllStudents(){
         return StudentRepo.findAll(st);
-
     }
     @override
     public Optional<Student> getOneStudent(Long id){
-        return StudentRepo.findBy(st);
+        return StudentRepo.findById(Long id);
     }
-    
+    @override
+    public void deleteStudent(Long id){
+        return StudentRepo.deleteById(Long id);
+    }
 }
