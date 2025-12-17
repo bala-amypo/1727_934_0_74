@@ -6,5 +6,12 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
+@service
+public class StudentServiceimpl implements StudentService{
+    @Autowired
 
-public class StudentServiceimpl
+    @
+    Student insertStudent(Student st){
+
+    }
+}
