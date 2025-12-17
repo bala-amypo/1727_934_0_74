@@ -14,4 +14,14 @@ public class StudentServiceimpl implements StudentService{
     public Student insertStudent(Student st){
         return StudentRepo.save(st);
     }
+    @override
+    public List<Student> getAllStudents(){
+        return StudentRepo.findAll(st);
+
+    }
+    @override
+    public Optional<Student> getOneStudent(Long id){
+        return StudentRepo.findBy(st);
+    }
+    
 }
