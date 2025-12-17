@@ -9,9 +9,9 @@ import com.example.demo.service.StudentService;
 @service
 public class StudentServiceimpl implements StudentService{
     @Autowired
-
-    @
-    Student insertStudent(Student st){
-
+    @StudentRepo
+    @override
+    public Student insertStudent(Student st){
+        return StudentRepo.save(st);
     }
 }
